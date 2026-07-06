@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raíz | Restauración de Muebles</title>
+
+  <!-- Poppins: tipografía general del sitio -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles-v2.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <!-- REEMPLAZAR: logo -->
+      <a href="#" class="header__logo">
+        <img src="assets/logo-23.png" alt="Raíz" class="header__logo-img">
+      </a>
+
+      <div class="header__right">
+        <nav class="header__nav" id="headerNav">
+          <a href="#nosotros" class="header__link">Nosotros</a>
+          <a href="#cursos" class="header__link">Cursos</a>
+          <a href="#capsula" class="header__link">Cápsula</a>
+          <a href="#contacto" class="header__link">Contactanos</a>
+        </nav>
+
+        <a href="curso-principiantes.html" class="btn btn--primary header__cta">Inscribirme</a>
+
+        <!-- Botón hamburguesa: solo visible en mobile -->
+        <button class="header__burger" id="headerBurger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú mobile (overlay) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#nosotros" class="mobile-menu__link">Nosotros</a>
+    <a href="#cursos" class="mobile-menu__link">Cursos</a>
+    <a href="#capsula" class="mobile-menu__link">Cápsula</a>
+    <a href="#contacto" class="mobile-menu__link">Contactanos</a>
+    <a href="curso-principiantes.html" class="btn btn--primary mobile-menu__cta">Inscribirme</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <!-- REEMPLAZAR: imagen de fondo del hero (desktop y mobile) -->
+  <section
+    class="hero"
+    id="hero"
+    style="--bg-desktop: url('assets/hero2.jpg'); --bg-mobile: url('assets/fondos/nuev-59.jpg');"
+  >
+    <div class="hero__content">
+      <h1 class="hero__title hero__title--left" data-anim="left">
+        <span class="hero__word--accent">Transformamos</span><br>
+        <span class="hero__word--base">Muebles</span>
+      </h1>
+      <h1 class="hero__title hero__title--right" data-anim="right">
+        <span class="hero__word--accent">Inspiramos</span><br>
+        <span class="hero__word--base">Personas</span>
+      </h1>
+      
+    </div>
+  </section>
+
+  <!-- ============ NOSOTROS ============ -->
+  <section
+  class="nosotros"
+  id="nosotros"
+  data-scroll-anim
+  style="
+    --bg-desktop: url('assets/fondos/nuev-04.jpg');
+    --bg-mobile: url('assets/fondos/nuev-60.jpg');
+  "
+>
+    <div class="nosotros__inner">
+
+      <div class="nosotros__text">
+        <span class="nosotros__label">Nosotros</span>
+        <h2 class="nosotros__title">Volver a las raíces</h2>
+        <!-- REEMPLAZAR: texto descriptivo de Nosotros -->
+        <p class="nosotros__desc">
+          Somos una comunidad creativa que enseña restauración de muebles, reciclaje y diseño
+          a través de cursos online pensados para quienes disfrutan crear con sus manos.
+        </p>
+
+        <div class="accordion" id="accordionNosotros">
+
+          <div class="accordion__item" data-image="assets/nuev-34.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>Técnica rigurosa</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>Diagnóstico, reparación y restauración integral paso a paso.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-image="assets/nuev-35.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>Mirada de diseño</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>Cada mueble restaurado es una pieza única con identidad visual propia.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-image="assets/nuev-37.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>Sustentabilidad real</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>Recuperar antes de descartar. Una práctica conciente y de bajo impacto.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="nosotros__image-wrap">
+        <!-- REEMPLAZAR: imagen por defecto de Nosotros (antes de abrir cualquier card) -->
+        <img
+          src="assets/nuev-23.png"
+          alt="Restauración de muebles"
+          class="nosotros__image"
+          id="nosotrosImage"
+        >
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ FRANJA DE NÚMEROS ============ -->
+  <!-- REEMPLAZAR: imagen de fondo (desktop y mobile) -->
+  <section
+    class="stats"
+    id="stats"
+    data-scroll-anim
+    style="--bg-desktop: url('assets/fondos/nuev-43.jpg'); --bg-mobile: url('assets/fondos/nuev-58.jpg');"
+  >
+    <div class="stats__inner">
+      <div class="stats__item">
+        <span class="stats__number" data-target="200" data-prefix="+">0</span>
+        <span class="stats__label">alumnos</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number" data-target="250" data-prefix="+">0</span>
+        <span class="stats__label">muebles restaurados</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__number" data-target="6">0</span>
+        <span class="stats__label">años de trayectoria</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VOLVER A LAS RAÍCES (cards con flip) ============ -->
+ <!-- REEMPLAZAR: imagen de fondo de la sección (desktop y mobile) -->
+<section
+  class="raices"
+  id="raices"
+  data-scroll-anim
+  style="--bg-desktop: url('assets/fondos/nuev-45.jpg'); --bg-mobile: url('assets/fondos/nuev-57.jpg');"
+>
+    <div class="raices__inner">
+      <h2 class="raices__title">Volver a las raíces</h2>
+      <!-- REEMPLAZAR: texto descriptivo -->
+      <p class="raices__desc">Somos una comunidad creativa que enseña restauración de muebles.</p>
+      <a href="#" class="raices__more">+ Más info</a>
+
+      <div class="flip-grid">
+
+  <!-- Card 1 -->
+  <div class="raices__card">
+    <h3 class="raices__card-title">Diagnóstico</h3>
+    <div class="flip-card" tabindex="0" role="button" aria-pressed="false">
+      <div class="flip-card__inner">
+        <div class="flip-card__face flip-card__face--front">
+          <!-- REEMPLAZAR: imagen frente Diagnóstico -->
+          <img src="assets/nuev-27.png" alt="Diagnóstico" class="flip-card__img">
+        </div>
+        <div class="flip-card__face flip-card__face--back">
+          <!-- REEMPLAZAR: imagen reverso Diagnóstico -->
+          <img src="assets/nuev-39.png" alt="" class="flip-card__img">
+          <p class="flip-card__back-text">Evaluamos el estado del mueble para definir el mejor proceso de restauración.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="raices__card">
+    <h3 class="raices__card-title">Reparación y restauración</h3>
+    <div class="flip-card" tabindex="0" role="button" aria-pressed="false">
+      <div class="flip-card__inner">
+        <div class="flip-card__face flip-card__face--front">
+          <!-- REEMPLAZAR: imagen frente Reparación y restauración -->
+          <img src="assets/nuev-38.png" alt="Reparación y restauración" class="flip-card__img">
+        </div>
+        <div class="flip-card__face flip-card__face--back">
+          <!-- REEMPLAZAR: imagen reverso Reparación y restauración -->
+          <img src="assets/nuev-40.png" alt="" class="flip-card__img">
+          <p class="flip-card__back-text">Recuperamos la estructura y restauramos cada detalle respetando su esencia original.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="raices__card">
+    <h3 class="raices__card-title">Rediseño</h3>
+    <div class="flip-card" tabindex="0" role="button" aria-pressed="false">
+      <div class="flip-card__inner">
+        <div class="flip-card__face flip-card__face--front">
+          <!-- REEMPLAZAR: imagen frente Rediseño -->
+          <img src="assets/nuev-42.png" alt="Rediseño" class="flip-card__img">
+        </div>
+        <div class="flip-card__face flip-card__face--back">
+          <!-- REEMPLAZAR: imagen reverso Rediseño -->
+          <img src="assets/nuev-41.png" alt="" class="flip-card__img">
+          <p class="flip-card__back-text">Renovamos cada pieza con acabados y detalles que combinan historia y diseño contemporáneo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>          <!-- cierra .flip-grid -->
+    </div>      <!-- cierra .raices__inner -->
+  </section>    <!-- cierra section.raices -->
+
+</div>
+
+  <!-- ============ NO APRENDÉS SOLO, APRENDÉS ACOMPAÑADO ============ -->
+ <!-- REEMPLAZAR: imagen de fondo de la sección (desktop y mobile) -->
+<section
+  class="acompanado"
+  id="acompanado"
+  data-scroll-anim
+  style="--bg-desktop: url('assets/fondos/nuev-48.jpg'); --bg-mobile: url('assets/fondos/nuev-56.jpg');"
+>
+    <div class="acompanado__inner">
+      <h2 class="acompanado__title">No aprendés solo,<br>aprendés acompañado</h2>
+      <p class="acompanado__desc">
+        Nuestros profesores comparten su experiencia y te guían en cada etapa
+        para que disfrutes el proceso de crear.
+      </p>
+
+      <div class="acompanado__video-wrap">
+        <!-- REEMPLAZAR: video (horizontal, se muestra completo sin recortar) y poster -->
+        <video
+          class="acompanado__video"
+          controls
+          poster="assets/img/acompanado-poster.jpg"
+        >
+          <source src="assets/video/video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ANTES Y DESPUÉS ============ -->
+  <!-- REEMPLAZAR: imagen de fondo de la sección (desktop y mobile) -->
+  <section
+    class="ba"
+    id="antes-despues"
+    data-scroll-anim
+    style="--bg-desktop: url('assets/img/ba-fondo-desktop.jpg'); --bg-mobile: url('assets/img/ba-fondo-mobile.jpg');"
+  >
+    <div class="ba__inner">
+ 
+      <div class="ba__text">
+        <h2 class="ba__title">Antes y después</h2>
+        <!-- REEMPLAZAR: texto descriptivo -->
+        <p class="ba__desc">
+          Cada mueble merece una segunda oportunidad. Descubrí cómo nuestros
+          alumnos transforman piezas con historia en objetos únicos.
+        </p>
+        <a href="curso-principiantes.html" class="btn btn--primary">Inscribirme</a>
+      </div>
+ 
+      <div class="ba-slider" id="baSlider">
+        <!-- REEMPLAZAR: imagen "después" (queda debajo, se revela al arrastrar) -->
+        <img src="assets/nuev-36.png" alt="Después de la restauración" class="ba-slider__img ba-slider__img--after">
+ 
+        <!-- REEMPLAZAR: imagen "antes" (se recorta con clip-path al arrastrar) -->
+        <img src="assets/nuev-24.png" alt="Antes de la restauración" class="ba-slider__img ba-slider__img--before" id="baBeforeImg">
+ 
+        <div class="ba-slider__handle" id="baHandle">
+          <span class="ba-slider__handle-icon">↔</span>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+
+  <!-- ============ CURSOS ============ -->
+<!-- REEMPLAZAR: imagen de fondo de la sección -->
+<section
+  class="cursos"
+  id="cursos"
+  data-scroll-anim
+  style="
+    --bg-desktop: url('assets/fondos/nuev-50.jpg');
+    --bg-mobile: url('assets/fondos/nuev-55.jpg');
+  "
+>
+  <div class="cursos__inner">
+    <span class="cursos__label">Cursos</span>
+    <h2 class="cursos__title">Cursos para transformar</h2>
+    <!-- REEMPLAZAR: texto descriptivo -->
+    <p class="cursos__subtitle">
+      Descubrí técnicas de restauración, tapicería y diseño en una comunidad
+      creativa que comparte la pasión por recuperar, reinventar y crear.
+    </p>
+    <a href="#" class="cursos__more">Más cursos +</a>
+
+    <div class="cursos__grid">
+
+      <!-- Card 1 -->
+      <article class="curso-card" data-stagger>
+        <div class="curso-card__img">
+          <!-- REEMPLAZAR: imagen -->
+          <img src="assets/cursoprin.png" alt="Restauración para principiantes">
+          <div class="curso-card__img-overlay">
+            <h3 class="curso-card__img-title">Restauración para principiantes</h3>
+            <div class="curso-card__chips">
+              <span class="curso-card__chip">6 semanas</span>
+              <span class="curso-card__chip">Online</span>
+            </div>
+          </div>
+        </div>
+        <div class="curso-card__body">
+          <p class="curso-card__desc">
+            Desde cero y a tu ritmo, aprendé a restaurar muebles de madera con
+            técnicas prácticas y acompañamiento paso a paso.
+          </p>
+          <a href="curso-principiantes.html" class="curso-card__link">Ver más +</a>
+          <div class="curso-card__footer">
+            <span class="curso-card__price">$12.000 <span class="curso-card__currency">ARS</span></span>
+            <a href="curso-principiantes.html" class="btn btn--primary curso-card__cta">Inscribirme</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="curso-card" data-stagger>
+        <div class="curso-card__img">
+          <img src="assets/cursoav.png" alt="Restauración Avanzados">
+          <div class="curso-card__img-overlay">
+            <h3 class="curso-card__img-title">Restauración Avanzados</h3>
+            <div class="curso-card__chips">
+              <span class="curso-card__chip">10 semanas</span>
+              <span class="curso-card__chip">Online + vivo</span>
+            </div>
+          </div>
+        </div>
+        <div class="curso-card__body">
+          <p class="curso-card__desc">
+            Aprendé técnicas de restauración, reparación y acabado para
+            devolverles vida a muebles de madera y lograr resultados de
+            calidad profesional.
+          </p>
+          <a href="#" class="curso-card__link">Ver más +</a>
+          <div class="curso-card__footer">
+            <span class="curso-card__price">$12.000 <span class="curso-card__currency">ARS</span></span>
+            <a href="curso-principiantes.html" class="btn btn--primary curso-card__cta">Inscribirme</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="curso-card" data-stagger>
+        <div class="curso-card__img">
+          <img src="assets/tapiz.png" alt="Tapicería de Sillas">
+          <div class="curso-card__img-overlay">
+            <h3 class="curso-card__img-title">Tapicería de Sillas</h3>
+            <div class="curso-card__chips">
+              <span class="curso-card__chip">8 semanas</span>
+              <span class="curso-card__chip">Online</span>
+            </div>
+          </div>
+        </div>
+        <div class="curso-card__body">
+          <p class="curso-card__desc">
+            Aprendé a restaurar y renovar tapizados de sillas utilizando
+            técnicas prácticas, materiales adecuados y terminaciones de
+            calidad.
+          </p>
+          <a href="#" class="curso-card__link">Ver más +</a>
+          <div class="curso-card__footer">
+            <span class="curso-card__price">$12.000 <span class="curso-card__currency">ARS</span></span>
+            <a href="curso-principiantes.html" class="btn btn--primary curso-card__cta">Inscribirme</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ============ PREGUNTAS FRECUENTES ============ -->
+  <!-- REEMPLAZAR: imagen de fondo de la sección (desktop y mobile) -->
+<section
+  class="faq"
+  id="faq"
+  data-scroll-anim
+  style="--bg-desktop: url('assets/img/faq-fondo-desktop.jpg'); --bg-mobile: url('assets/fondos/nuev-54.jpg');"
+>
+    <div class="faq__inner">
+
+      <div class="faq__image-wrap">
+        <!-- REEMPLAZAR: imagen por defecto de FAQ (antes de abrir cualquier pregunta) -->
+        <img
+          src="assets/nuev-34.png"
+          alt="Preguntas frecuentes"
+          class="faq__image"
+          id="faqImage"
+        >
+      </div>
+
+      <div class="faq__content">
+        <h2 class="faq__title">Preguntas frecuentes</h2>
+
+        <div class="accordion" id="accordionFaq">
+
+          <div class="accordion__item" data-image="assets/nuev-46.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Cómo es la modalidad del curso?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <!-- REEMPLAZAR: respuesta -->
+                <p>Es 100% online, con clases grabadas a las que accedés cuando quieras.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-image="assets/nuev-29.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Necesito tener experiencia previa?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>No, arrancamos desde cero. Cada curso está pensado para todos los niveles.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-image="assets/nuev-30.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Qué materiales necesito?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>Te compartimos una lista de materiales básicos, fáciles de conseguir, antes de empezar.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-image="assets/nuev-31.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Cuánto dura el curso?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>La duración varía según el curso, entre 6 y 10 semanas aproximadamente.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-image="assets/nuev-32.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Puedo hacerlo a mi ritmo?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>Sí, el contenido queda disponible para que avances cuando puedas.</p>
+              </div>
+            </div>
+          </div>
+
+       
+
+        
+
+          <div class="accordion__item" data-image="assets/nuev-46.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Tengo acompañamiento durante el proceso?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>Sí, vas a tener acompañamiento de nuestros profesores durante todo el curso.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIOS ============ -->
+<!-- REEMPLAZAR: imagen de fondo de la sección -->
+<section class="testimonios" id="testimonios" data-scroll-anim style="background-image: url('assets/img/testimonios-fondo.jpg');">
+  <div class="testimonios__inner">
+    <span class="testimonios__label">Testimonios de nuestros alumnos</span>
+    <h2 class="testimonios__title">Muebles renovados,<br>historias que continúan</h2>
+    <p class="testimonios__subtitle">
+      Restaurar es rescatar historias y crear nuevas posibilidades. Estas son
+      algunas de las transformaciones que nos inspiran.
+    </p>
+
+    <div class="testimonios__slider-wrapper">
+      <button class="testimonios__arrow testimonios__arrow--prev" id="testiPrev" aria-label="Anterior">‹</button>
+
+      <div class="testimonios__track-container">
+        <div class="testimonios__track" id="testiTrack">
+
+          <div class="testimonio-card">
+            <p>"Llegué sin experiencia y terminé restaurando una cómoda antigua que tenía guardada mi familia desde hace años. Las clases son claras y el acompañamiento es excelente."</p>
+            <div class="testimonio-card__author">
+              <strong>María G.</strong>
+              <small>Alumna de Restauración Básica</small>
+            </div>
+          </div>
+
+          <div class="testimonio-card">
+            <p>"Lo que más me gustó fue aprender técnicas profesionales que realmente se usan en el oficio. Hoy realizo trabajos por encargo gracias a lo aprendido en el curso."</p>
+            <div class="testimonio-card__author">
+              <strong>Javier R.</strong>
+              <small>Restauración para Avanzados</small>
+            </div>
+          </div>
+
+          <div class="testimonio-card">
+            <p>"Las explicaciones paso a paso y las prácticas me dieron mucha confianza. Recomiendo el curso a cualquiera que quiera iniciarse en la restauración."</p>
+            <div class="testimonio-card__author">
+              <strong>Lucía M.</strong>
+              <small>Restauración para principiantes</small>
+            </div>
+          </div>
+
+          <div class="testimonio-card">
+            <p>"Restauré una mesa de roble que pensé que no tenía solución. Aprendí sobre lijado, reparación y acabados de una manera muy práctica."</p>
+            <div class="testimonio-card__author">
+              <strong>Carlos A.</strong>
+              <small>Restauración para Avanzados</small>
+            </div>
+          </div>
+
+          <div class="testimonio-card">
+            <p>"Además de aprender un oficio, descubrí una actividad que disfruto muchísimo. El ambiente de las clases es muy agradable y motivador."</p>
+            <div class="testimonio-card__author">
+              <strong>Ana P.</strong>
+              <small>Tapicería de Sillas</small>
+            </div>
+          </div>
+
+          <div class="testimonio-card">
+            <p>"La calidad del contenido superó mis expectativas. Cada módulo está bien organizado y permite avanzar incluso si nunca trabajaste con madera."</p>
+            <div class="testimonio-card__author">
+              <strong>Federico S.</strong>
+              <small>Restauración para principiantes</small>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="testimonios__arrow testimonios__arrow--next" id="testiNext" aria-label="Siguiente">›</button>
+    </div>
+
+    <div class="testimonios__dots" id="testiDots"></div>
+  </div>
+</section>
+
+  <!-- ============ CÁPSULA ============ -->
+<section class="capsula" id="capsula" data-scroll-anim>
+  <div class="capsula__split">
+
+    <!-- Mitad izquierda: fondo negro + texto -->
+    <div class="capsula__text-panel">
+      <div class="capsula__text">
+        <span class="capsula__label">Muebles Cápsula</span>
+        <h2 class="capsula__title">Piezas con Historia</h2>
+        <!-- REEMPLAZAR: texto descriptivo -->
+        <p class="capsula__desc">
+          Una selección de muebles restaurados en ediciones únicas. Objetos con
+          historia que vuelven a cobrar vida a través del diseño y la creatividad.
+        </p>
+        <a href="#" class="capsula__link">Ver más +</a>
+      </div>
+    </div>
+
+    <!-- Mitad derecha: carrusel infinito con flechas -->
+    <div class="capsula__carousel-panel">
+      <div class="capsula__track" id="capsulaTrack">
+        <!-- REEMPLAZAR: imágenes del carrusel -->
+        <div class="capsula__slide" style="background-image: url('assets/carrusel-46.jpg');"></div>
+        <div class="capsula__slide" style="background-image: url('assets/carrusel-47.jpg');"></div>
+        <div class="capsula__slide" style="background-image: url('assets/carrusel-48.jpg');"></div>
+        <div class="capsula__slide" style="background-image: url('assets/carrusel-49.jpg');"></div>
+        <div class="capsula__slide" style="background-image: url('assets/carrusel-52.jpg');"></div>
+        <!-- Set duplicado, necesario para que el loop sea infinito sin cortes -->
+        <div class="capsula__slide" style="background-image: url('assets/carrusel-46.jpg');"></div>
+        <div class="capsula__slide" style="background-image: url('assets/carrusel-47.jpg');"></div>
+        <div class="capsula__slide" style="background-image: url('assets/carrusel-48.jpg');"></div>
+        <div class="capsula__slide" style="background-image: url('assets/carrusel-49.jpg');"></div>
+        <div class="capsula__slide" style="background-image: url('assets/carrusel-52.jpg');"></div>
+      </div>
+
+      <button class="capsula__arrow capsula__arrow--prev" id="capsulaPrev" aria-label="Imagen anterior">‹</button>
+      <button class="capsula__arrow capsula__arrow--next" id="capsulaNext" aria-label="Imagen siguiente">›</button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ============ CONTACTO ============ -->
+ <!-- REEMPLAZAR: imagen de fondo de la sección (desktop y mobile) -->
+<section
+  class="contacto"
+  id="contacto"
+  data-scroll-anim
+  style="--bg-desktop: url('assets/fondos/nuev-53.jpg'); --bg-mobile: url('assets/fondos/nuev-62.jpg');"
+>
+    <div class="contacto__inner">
+
+      <div class="contacto__text">
+        <span class="contacto__label">Contactanos</span>
+        <h2 class="contacto__title">¿Tenés alguna consulta?</h2>
+        <!-- REEMPLAZAR: texto descriptivo -->
+        <p class="contacto__desc">
+          Completá el formulario y nos pondremos en contacto con vos a la
+          brevedad para responder tus preguntas.
+        </p>
+      </div>
+
+      <form class="contacto__form" id="contactoForm" novalidate>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre">
+          <span class="form-error" id="errorNombre"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <span class="form-error" id="errorEmail"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          <span class="form-error" id="errorMensaje"></span>
+        </div>
+
+        <button type="submit" class="btn btn--dark contacto__submit">Enviar</button>
+
+        <p class="contacto__success" id="contactoSuccess" role="status"></p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <!-- REEMPLAZAR: logo (mismo archivo que el header) -->
+        <img src="assets/img/logo.png" alt="Raíz" class="footer__logo-img">
+        <p class="footer__tagline">Restauración de muebles con identidad propia.</p>
+      </div>
+
+      <nav class="footer__nav">
+        <a href="#nosotros" class="footer__link">Nosotros</a>
+        <a href="#cursos" class="footer__link">Cursos</a>
+        <a href="#capsula" class="footer__link">Cápsula</a>
+        <a href="#contacto" class="footer__link">Contactanos</a>
+      </nav>
+
+      <div class="footer__social">
+        <!-- REEMPLAZAR: links de redes sociales -->
+        <a href="#" aria-label="Instagram" class="footer__social-link">Instagram</a>
+        <a href="#" aria-label="Facebook" class="footer__social-link">Facebook</a>
+        <a href="#" aria-label="TikTok" class="footer__social-link">TikTok</a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Raíz. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script-v2.js"></script>
+</body>
+</html>

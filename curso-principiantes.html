@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restauración para principiantes – Raíz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-v2.css" />
+  <link rel="stylesheet" href="curso-principiantes.css" />
+</head>
+<body>
+
+ <!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="index.html" class="header__logo">
+      <img src="assets/logo-23.png" alt="Raíz" class="header__logo-img">
+    </a>
+
+    <div class="header__right">
+      <nav class="header__nav" id="headerNav">
+        <a href="index.html#nosotros" class="header__link">Nosotros</a>
+        <a href="index.html#cursos" class="header__link">Cursos</a>
+        <a href="index.html#capsula" class="header__link">Cápsula</a>
+        <a href="index.html#contacto" class="header__link">Contactanos</a>
+      </nav>
+
+      <a href="#inscribirse" class="btn btn--primary header__cta">Inscribirme</a>
+
+      <button class="header__burger" id="headerBurger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Menú mobile (overlay) -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#nosotros" class="mobile-menu__link">Nosotros</a>
+  <a href="index.html#cursos" class="mobile-menu__link">Cursos</a>
+  <a href="index.html#capsula" class="mobile-menu__link">Cápsula</a>
+  <a href="index.html#contacto" class="mobile-menu__link">Contactanos</a>
+  <a href="#inscribirse" class="btn btn--primary mobile-menu__cta">Inscribirme</a>
+</div>
+
+<!-- ========== HERO ========== -->
+  <section class="curso-hero" style="--bg-desktop: url('assets/hero5.jpg'); --bg-mobile: url('assets/hero5.jpg');">
+    <div class="curso-hero__inner">
+      <div class="curso-hero__text">
+        <span class="curso-hero__eyebrow">Curso</span>
+        <h1 class="curso-hero__titulo">Restauración para principiantes</h1>
+        <p class="curso-hero__docente">Un curso de <strong>Lucía Giraudo</strong></p>
+        <div class="curso-hero__cta" id="inscribirse">
+         <a href="#" class="btn btn--primary">Empezá ahora</a>
+          <div class="curso-hero__precio">
+            <span class="precio-monto"></span>
+            <span class="precio-moneda"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- ========== DESCRIPCIÓN ========== -->
+<section class="curso-desc" style="--bg-desktop: url('assets/fondos/nuev-62.jpg'); --bg-mobile: url('assets/fondos/');">
+  <div class="curso-desc__inner">
+    <div class="curso-desc__texto">
+      <p>Descubrí cómo devolverles la vida a muebles de madera y transformarlos en piezas únicas llenas de personalidad. En este curso online aprenderás, paso a paso, las técnicas esenciales de restauración, desde la preparación de la superficie hasta los acabados finales.</p>
+      
+    </div>
+
+    <div class="curso-desc__card">
+      <ul class="curso-card__list">
+        <li class="curso-card__item">
+          <span class="curso-card__icon">★</span>
+          99% valoraciones positivas <span class="curso-card__muted">(REEMPLAZAR-cantidad-reseñas)</span>
+        </li>
+        <li class="curso-card__item">
+          <span class="curso-card__icon">👤</span>
+          100 estudiantes
+        </li>
+        <li class="curso-card__item">
+          <span class="curso-card__icon">▶</span>
+          Lecciones (5h totales)
+        </li>
+        <li class="curso-card__item">
+          <span class="curso-card__icon">📎</span>
+          2 recursos adicionales
+        </li>
+        <li class="curso-card__item">
+          <span class="curso-card__icon">⏱</span>
+          Online y a tu ritmo
+        </li>
+        <li class="curso-card__item">
+          <span class="curso-card__icon">🎧</span>
+          Audio: Español, Inglés
+        </li>
+        <li class="curso-card__item">
+          <span class="curso-card__icon">💬</span>
+          Subtítulos: Español, Inglés
+        </li>
+        <li class="curso-card__item">
+          <span class="curso-card__icon">📊</span>
+          Nivel: Iniciación
+        </li>
+      </ul>
+
+      <div class="curso-card__price">
+        <span class="curso-card__monto">$12.000</span>
+        <span class="curso-card__moneda">ARS</span>
+      </div>
+
+      <a href="#inscribirse" class="btn btn--primary btn--block">Inscribirse</a>
+    </div>
+  </div>
+</section>
+
+ <!-- ========== CONTENIDOS ========== -->
+<section class="curso-contenidos" style="--bg-desktop: url('assets/fondos/nuev-63.jpg'); --bg-mobile: url('assets/fondos/nuev-69.jpg');">
+  <div class="curso-contenidos__inner">
+    <h2 class="section-title">Contenidos</h2>
+  
+    <div class="contenidos-grid">
+
+      <div class="raices__card">
+        <div class="contenido-card__heading">
+          <span class="flip-card__num">U1</span>
+          <h3 class="raices__card-title">Primeros pasos en la restauración</h3>
+        </div>
+        <div class="flip-card" tabindex="0" role="button" aria-pressed="false">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <!-- REEMPLAZAR: foto de la unidad -->
+              <img src="assets/nuev-35.png" alt="Primeros pasos en la restauración" class="flip-card__foto" />
+            </div>
+            <div class="flip-card__back">
+              <ul class="video-list">
+                <li><span class="video-icon">▶</span> Bienvenida al curso</li>
+                <li><span class="video-icon">▶</span> Herramientas y materiales esenciales</li>
+                <li><span class="video-icon">▶</span> Tipos de madera y diagnóstico del mueble</li>
+                <li><span class="video-icon">▶</span> Preparación y lijado de superficies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="raices__card">
+        <div class="contenido-card__heading">
+          <span class="flip-card__num">U2</span>
+          <h3 class="raices__card-title">Técnicas de restauración</h3>
+        </div>
+        <div class="flip-card" tabindex="0" role="button" aria-pressed="false">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <!-- REEMPLAZAR: foto de la unidad -->
+              <img src="assets/nuev-34.png" alt="Técnicas de restauración" class="flip-card__foto" />
+            </div>
+            <div class="flip-card__back">
+              <ul class="video-list">
+                <li><span class="video-icon">▶</span> Reparación de grietas y uniones</li>
+                <li><span class="video-icon">▶</span> Masillado y recuperación de piezas</li>
+                <li><span class="video-icon">▶</span> Técnicas de pintura y renovación</li>
+                <li><span class="video-icon">▶</span> Acabados y protección de la madera</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="raices__card">
+        <div class="contenido-card__heading">
+          <span class="flip-card__num">U3</span>
+          <h3 class="raices__card-title">Proyecto final</h3>
+        </div>
+        <div class="flip-card" tabindex="0" role="button" aria-pressed="false">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <!-- REEMPLAZAR: foto de la unidad -->
+              <img src="assets/nuev-38.png" alt="Proyecto final" class="flip-card__foto" />
+            </div>
+            <div class="flip-card__back">
+              <ul class="video-list">
+                <li><span class="video-icon">▶</span> Restauración completa de un mueble</li>
+                <li><span class="video-icon">▶</span> Detalles y terminaciones</li>
+                <li><span class="video-icon">▶</span> Consejos para lograr un acabado profesional</li>
+                <li><span class="video-icon">▶</span> Cierre del curso y próximos pasos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIOS ========== -->
+<section class="curso-testimonios" style="--bg-desktop: url('assets/fondos/nuev-64.jpg'); --bg-mobile: url('assets/fondos/nuev-71.jpg');">
+  <div class="curso-testimonios__inner">
+    <h2 class="section-title">Testimonios</h2>
+    <div class="testimonios-stagger">
+
+      <div class="testimonio-card stagger-card">
+        <!-- REEMPLAZAR: foto del proyecto del alumno -->
+        <div class="testimonio-proyecto">
+          <img src="assets/fondosdestop-43.jpg" alt="Proyecto de María G." class="testimonio-proyecto-img" />
+        </div>
+        <div class="testimonio-contenido">
+          <!-- REEMPLAZAR: foto de perfil del alumno -->
+          <img src="assets/fondosdestop-38.jpg" alt="María G." class="testimonio-foto" />
+          <blockquote>
+            "Llegué sin experiencia y terminé restaurando una cómoda antigua que tenía guardada mi familia desde hace años. Las clases son claras y el acompañamiento es excelente."
+          </blockquote>
+          <cite>María G.<br><span>Alumna de Restauración Básica</span></cite>
+        </div>
+      </div>
+
+      <div class="testimonio-card stagger-card">
+        <!-- REEMPLAZAR: foto del proyecto del alumno -->
+        <div class="testimonio-proyecto">
+          <img src="assets/fondosdestop-44.jpg" alt="Proyecto de Javier R." class="testimonio-proyecto-img" />
+        </div>
+        <div class="testimonio-contenido">
+          <!-- REEMPLAZAR: foto de perfil del alumno -->
+          <img src="assets/fondosdestop-36.jpg" alt="Javier R." class="testimonio-foto" />
+          <blockquote>
+            "Lo que más me gustó fue aprender técnicas profesionales que realmente se usan en el oficio. Hoy realizo trabajos por encargo gracias a lo aprendido en el curso."
+          </blockquote>
+          <cite>Javier R.<br><span>Alumno de Restauración Avanzada</span></cite>
+        </div>
+      </div>
+
+      <div class="testimonio-card stagger-card">
+        <!-- REEMPLAZAR: foto del proyecto del alumno -->
+        <div class="testimonio-proyecto">
+          <img src="assets/fondosdestop-42.jpg" alt="Proyecto de Lucía M." class="testimonio-proyecto-img" />
+        </div>
+        <div class="testimonio-contenido">
+          <!-- REEMPLAZAR: foto de perfil del alumno -->
+          <img src="assets/fondosdestop-37.jpg" alt="Lucía M." class="testimonio-foto" />
+          <blockquote>
+            "Las explicaciones paso a paso y las prácticas me dieron mucha confianza. Recomiendo el curso a cualquiera que quiera iniciarse en la restauración."
+          </blockquote>
+          <cite>Lucía M.<br><span>Alumna</span></cite>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+</section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq" id="faq" style="--bg-desktop: url('assets/fondos/nuev-65.jpg'); --bg-mobile: url('assets/fondos/nuev-70.jpg');">
+    <div class="faq__inner">
+
+      <div class="faq__image-wrap">
+        <!-- REEMPLAZAR: imagen por defecto -->
+        <img src="assets/nuev-32.png" alt="Preguntas frecuentes" class="faq__image" id="faqImage">
+      </div>
+
+      <div class="faq__content">
+        <h2 class="faq__title">Preguntas frecuentes</h2>
+
+        <div class="accordion" id="accordionFaq">
+
+          <div class="accordion__item" data-image="assets/nuev-28.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Cómo es la modalidad del curso?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>El curso es 100% online y está compuesto por clases grabadas que podés ver a tu ritmo, desde cualquier dispositivo y en el momento que te resulte más cómodo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-image="assets/nuev-30.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Necesito tener experiencia previa?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>No. El curso está diseñado tanto para principiantes como para personas con conocimientos previos que quieran perfeccionar sus técnicas de restauración.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-image="assets/nuev-29.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Qué materiales y herramientas necesito?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>Al comenzar el curso recibirás una lista detallada de materiales y herramientas recomendadas. Muchas de las prácticas pueden realizarse con elementos básicos y de fácil acceso.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-image="assets/nuev-27.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Obtengo un certificado al finalizar?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>Sí. Al completar todas las lecciones y actividades del curso recibirás un certificado digital que acredita tu participación y los conocimientos adquiridos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-image="assets/nuev-32.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Cuánto tiempo tendré acceso al curso?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>Una vez inscripto, tendrás acceso al contenido para que puedas avanzar a tu propio ritmo y volver a consultar las clases cuando lo necesites.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item" data-image="assets/nuev-31.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Qué aprenderé durante el curso?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>Aprenderás a evaluar el estado de un mueble, reparar daños, preparar superficies, aplicar técnicas de restauración, pintura y acabados para devolverle vida a piezas de madera.</p>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="accordion__item" data-image="assets/nuev-28.png">
+            <button class="accordion__header" aria-expanded="false">
+              <span>¿Las clases incluyen proyectos prácticos?</span>
+              <span class="accordion__icon">+</span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                <p>Sí. A lo largo del curso trabajarás sobre ejemplos y proyectos reales para poner en práctica cada técnica y ganar confianza en el proceso de restauración.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CTA FINAL ========== -->
+<!-- REEMPLAZAR: imagen de fondo de la sección -->
+<section class="curso-cta-final" style="--bg-desktop: url('assets/fondos/nuev-67.jpg'); --bg-mobile: url('assets/fondos/nuev-72.jpg');">
+  <div class="curso-cta-final__inner">
+    <h2>¿Lista para empezar?</h2>
+    <p>Inscribite hoy y comenzá tu camino en la restauración de muebles.</p>
+    <div class="curso-cta-final__acciones">
+      <a href="#" class="btn btn--primary">Inscribirse ahora</a>
+      <span class="precio-monto-final">$12.000 ARS</span>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="curso-footer" style="--bg-desktop: url('assets/fondos/nuev-68.jpg'); --bg-mobile: url('assets/fondos/nuev-73.jpg');">
+    <div class="container curso-footer__grid">
+      <div class="curso-footer__brand">
+        <p class="curso-footer__logo">Raíz</p>
+        <p>Suscribite a nuestro newsletter</p>
+        <div class="curso-footer__newsletter">
+          <input type="email" placeholder="Tu email" />
+          <button class="btn btn--primary btn--sm">→</button>
+        </div>
+        
+      </div>
+      <div class="curso-footer__col">
+        <h5>Redes</h5>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+      <div class="curso-footer__col">
+        <h5>Info</h5>
+        <a href="#">Nosotros</a>
+        <a href="#">Cursos</a>
+        <a href="#">Preguntas</a>
+        <a href="#">Contacto</a>
+      </div>
+      <div class="curso-footer__col">
+        <h5>Nosotros</h5>
+        <a href="#">Nosotros</a>
+        <a href="#">Cursos</a>
+        <a href="#">Preguntas</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+    <div class="curso-footer__bottom container">
+      <p>Copyright 2024 © Raíz. Todos los derechos reservados.</p>
+      <p>Plataforma diseñada por Ayelen Bustos Tashima | Políticas de Privacidad</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="curso-principiantes.js"></script>
+
+</body>
+</html>
