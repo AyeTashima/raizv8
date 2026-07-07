@@ -460,9 +460,7 @@ img {
    ========================================================================== */
 .stats {
   position: relative;
-  background-image:
-    linear-gradient(0deg, rgba(255, 125, 65, 0.82), rgba(255, 125, 65, 0.82)),
-    var(--bg-desktop);
+  background-image: var(--bg-desktop);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -471,9 +469,7 @@ img {
 
 @media (max-width: 768px) {
   .stats {
-    background-image:
-      linear-gradient(0deg, rgba(255, 125, 65, 0.82), rgba(255, 125, 65, 0.82)),
-      var(--bg-mobile);
+    background-image: var(--bg-mobile);
   }
 }
 
@@ -636,18 +632,17 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* sin max-width acá */
-}
-
-.acompanado__inner {
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .acompanado {
     background-image: var(--bg-mobile);
   }
+}
+
+.acompanado__inner {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .acompanado__title {
@@ -664,10 +659,9 @@ img {
   margin-bottom: 40px;
 }
 
+/* --- Video banner: ancho completo, panorámico, sin recortar --- */
 .acompanado__video-wrap {
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
   background: var(--negro);
   border-radius: var(--radius);
   overflow: hidden;
@@ -676,8 +670,8 @@ img {
 .acompanado__video {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  /* object-fit: contain para que el video horizontal se vea completo, sin recortes */
+  aspect-ratio: 21 / 9;
+  /* object-fit: contain para que el video se vea completo, sin recortes */
   object-fit: contain;
   background: var(--negro);
 }

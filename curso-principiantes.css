@@ -633,99 +633,56 @@
   color: var(--blanco);
 }
 
-/* ============================================================
+/* ==========================================================================
    FOOTER
-   ============================================================ */
-.curso-footer {
-  background-image: var(--bg-desktop);
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  color: var(--blanco);
-  padding: 60px 0 0;
+   ========================================================================== */
+.footer {
+  background: var(--negro);
+  padding: 60px 32px 0;
 }
 
-.curso-footer__grid {
+.footer__inner {
+  max-width: 1280px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 48px;
-  padding-bottom: 48px;
-  border-bottom: 1px solid rgba(255,255,255,.12);
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 32px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.curso-footer__logo {
-  font-size: 22px;
-  font-weight: 900;
-  color: var(--naranja);
-  font-style: italic;
-  margin-bottom: 8px;
+.footer__logo-img {
+  height: 32px;
+  width: auto;
+  margin-bottom: 14px;
+  /* Si el logo es oscuro, aplicar filter: invert(1) o brightness(0) invert(1) aquí */
 }
 
-.curso-footer__brand p {
+.footer__tagline {
   font-size: 13px;
-  /* 🛑 MODIFICADO: Eliminamos opacity: .7 para que el texto sea blanco pleno */
-  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 260px;
 }
 
-.curso-footer__newsletter {
+.footer__nav {
   display: flex;
-  gap: 8px;
-  margin-bottom: 16px;
-}
-
-.curso-footer__newsletter input {
-  flex: 1;
-  padding: 10px 14px;
-  border-radius: 50px;
-  border: none;
-  font-size: 13px;
-  background: rgba(255,255,255,.1);
-  color: var(--blanco);
-  outline: none;
-}
-.curso-footer__newsletter input::placeholder { color: rgba(255,255,255,.5); }
-
-.curso-footer__social {
-  display: flex;
+  flex-direction: column;
   gap: 12px;
-  font-size: 18px;
-}
-.curso-footer__social a { opacity: .6; transition: opacity .2s; }
-.curso-footer__social a:hover { opacity: 1; }
-
-.curso-footer__col { display: flex; flex-direction: column; gap: 10px; }
-
-/* Títulos de las columnas (REDES, INFO, NOSOTROS) */
-.curso-footer__col h5 {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--blanco); /* 👈 AGREGADO: Asegura el blanco */
-  /* 🛑 MODIFICADO: Eliminamos opacity: .5 */
-  margin-bottom: 4px;
 }
 
-/* Enlaces de las columnas (Instagram, Nosotros, Cursos, etc.) */
-.curso-footer__col a {
+.footer__link {
   font-size: 14px;
-  color: var(--blanco); /* 👈 AGREGADO: Forzamos el color blanco puro */
-  /* 🛑 MODIFICADO: Eliminamos opacity: .75 */
-  transition: opacity .2s;
+  color: rgba(255, 255, 255, 0.85);
 }
-.curso-footer__col a:hover { opacity: 0.8; } /* Un pequeño cambio al pasar el mouse */
 
-/* Texto de copyright inferior */
-.curso-footer__bottom {
-  padding: 20px 24px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 8px;
-  font-size: 12px;
-  color: var(--blanco); /* 👈 AGREGADO: Asegura el blanco */
-  /* 🛑 MODIFICADO: Eliminamos opacity: .45 */
+.footer__link:hover {
+  color: var(--naranja);
 }
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 
 @media (max-width: 768px) {
   .curso-hero__inner {
